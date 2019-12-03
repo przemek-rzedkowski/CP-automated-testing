@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="RegressionSuite">
+    <test name="LoggingFeatureTest">
+        <classes>
+            <class name="testing.steps.TestRunner" />
+            <class name="testing.testcases.LoggingTest" />
+        </classes>
+    </test>
+</suite>
