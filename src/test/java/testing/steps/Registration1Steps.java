@@ -15,6 +15,7 @@ public class Registration1Steps extends CommonSteps {
 
     @Before
     public void setUpBeforeTestMethod() throws IOException {
+        //System.out.println("regi");
         super.setUpBeforeTestMethod();
     }
 

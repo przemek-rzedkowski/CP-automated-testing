@@ -14,11 +14,16 @@ public class DashboardPage extends BasePage {
 
     @Override
     public boolean isLoaded() {
-        waitHelper.waitForElementToAppear(mainPageChecker);
+        waitHelper.waitForElementToAppear(PVSystemName);
         //waitHelper.waitForPageLoaded(driver);
-        return mainPageChecker.isDisplayed();
+        return PVSystemName.isDisplayed();
     }
 
     @FindBy(xpath = "//p[@class='c-icon-badge__label'][contains(text(),'Max Mustermann')]")
     private WebElement mainPageChecker;
+
+    @FindBy(xpath = "//h2[contains(text(),'PV System')]")
+    private WebElement PVSystemName;
+
+
 }

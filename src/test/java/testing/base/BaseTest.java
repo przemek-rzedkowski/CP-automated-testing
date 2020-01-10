@@ -33,8 +33,6 @@ public abstract class BaseTest {
         driver.manage().window().maximize();
         driver.get(properties.getProperty("app.base.url"));
         authenticator = new AuthenticationHelper();
-        //loginPage = new LoginPage(driver);
-        //landingPage = new LandingPage(driver);
     }
 
     @AfterMethod

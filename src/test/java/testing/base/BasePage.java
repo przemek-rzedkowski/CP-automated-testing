@@ -14,7 +14,7 @@ public abstract class BasePage {
 
     protected abstract boolean isLoaded();
 
-    protected WebDriver driver;
+    protected static WebDriver driver;
 
     protected WaitHelper waitHelper;
 

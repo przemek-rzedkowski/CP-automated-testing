@@ -1,4 +1,4 @@
-#@ignore
+@ignore
 Feature: Can Customer sign up
   Customer should be able to register new account
 

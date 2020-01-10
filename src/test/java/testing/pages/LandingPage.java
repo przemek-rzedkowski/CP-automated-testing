@@ -13,8 +13,10 @@ public class LandingPage extends BasePage {
     }
 
     @Override
-    protected boolean isLoaded() {
-        return false;
+    public boolean isLoaded() {
+        //Thread.sleep(3000);
+        waitHelper.waitForElementToAppear(proceedToLoginButton);
+        return proceedToLoginButton.isDisplayed();
     }
 
     @FindBy(xpath = "//span[contains(text(),'No, I´m a user already')]")
@@ -36,7 +38,8 @@ public class LandingPage extends BasePage {
         return new Registration1Page(driver);
     }
 
-    public void proceedToDemoMode() {
+    public DemoModePage proceedToDemoMode() {
         element.click(demoButton);
+        return new DemoModePage(driver);
     }
 }

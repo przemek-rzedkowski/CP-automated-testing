@@ -42,6 +42,7 @@ public class BrowserHelper {
             WebDriverManager.chromedriver().setup();
             chromeOptions = new ChromeOptions();
             chromeOptions.setHeadless(headless);
+            chromeOptions.addArguments("window-size=1920,1080");
             chromeOptions.addArguments("start-maximized");
         }
 

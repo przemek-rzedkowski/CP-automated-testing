@@ -17,6 +17,7 @@ public class LoginSteps extends CommonSteps {
 
     @Before
     public void setUpBeforeTestMethod() throws IOException {
+        //System.out.println("login");
         super.setUpBeforeTestMethod();
     }
 
